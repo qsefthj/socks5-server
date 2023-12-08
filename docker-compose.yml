@@ -9,6 +9,3 @@ services:
     restart: always
     environment:
       TZ: Asia/Shanghai
-    ports:
-      - "10080:10080"
-      - "10084:10084"
