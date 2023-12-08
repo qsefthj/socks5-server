@@ -1,0 +1,14 @@
+version: '3.5'
+
+services:
+  goproxy:
+    build: ./
+    image: rex/goproxy
+    # 使用 Host 模式直接映射到宿主机
+    network_mode: host
+    restart: always
+    environment:
+      TZ: Asia/Shanghai
+    ports:
+      - "10080:10080"
+      - "10084:10084"
