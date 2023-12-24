@@ -5,10 +5,10 @@ services:
     build: ./
     image: rex/goproxy
     # 使用 Host 模式直接映射到宿主机
-    # network_mode: host
+    network_mode: host
     restart: always
     environment:
       TZ: Asia/Shanghai
-    ports:
-      - 1080:10080
-      - 1084:10084
+    # ports:
+    #   - 1080:10080
+    #   - 1084:10084
